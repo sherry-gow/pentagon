@@ -65,9 +65,7 @@ This creates the VPC and private, public, and admin subnets in that VPC for non 
 ### Configure DNS and Route53
 If you don't already have a Route53 Hosted Zone configured, do that now.
 * Create a Route53 Hosted Zone (e.g. `pentagon.mycompany.com`)
-* In `inventory/default/clusters/*/vars.yml`
-  * Set `CLUSTER_NAME` to a hostname that ends with your hosted zone (e.g. `working-1.pentagon.mycompany.com`)
-  * Set `DNS_ZONE` to your Hosted Zone (e.g. `pentagon.mycompany.com`)
+* In `inventory/default/clusters/*/vars.yml`, set `dns_zone` to your Hosted Zone (e.g. `pentagon.mycompany.com`)
 
 ### Setup a VPN
 This creates a AWS instance running [OpenVPN](https://openvpn.net/). Read more about the VPN [here](vpn.md).
