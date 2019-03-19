@@ -41,6 +41,7 @@ Pentagon is “batteries included”- not only does one get a network with a clu
 The `pentagon` commands will take no action in your cloud infrastructure. You will need to run these commands to finish creation of a default project
 
 * `export INFRASTRUCTURE_REPO=$(pwd)`
+* `export INVENTORY=default`
 * `. yaml_source inventory/default/config/local/vars.yml`
 * `. yaml_source inventory/default/config/private/secrets.yml`
   * Sources environment variables required for the following steps. This will be required each time you work with the infrastructure repository or if you move the repository to another location.
