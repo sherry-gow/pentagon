@@ -70,7 +70,6 @@ If you don't already have a Route53 Hosted Zone configured, do that now.
 ### Setup a VPN
 This creates a AWS instance running [OpenVPN](https://openvpn.net/). Read more about the VPN [here](vpn.md).
 * `cd $INFRASTRUCTURE_REPO`
-* `export INVENTORY=default`
 * `ansible-galaxy install -r ansible-requirements.yml`
 * `cd inventory/default/resources/admin-environment`
 * In `env.yml`, set the list of user names that should have access to the VPN under `openvpn_clients`. You can add more later.
