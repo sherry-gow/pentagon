@@ -76,7 +76,7 @@ This creates a AWS instance running [OpenVPN](https://openvpn.net/). Read more a
 * Run Ansible a few times
   * Run `ansible-playbook vpn.yml` until it fails on `VPN security groups`
   * Run `ansible-playbook vpn.yml` a second time and it will succeed 
-  * Edit `inventory/default/config/private/ssh_config` and add the IP address from the SSH key prompt to the `#VPN instance` section.
+  * Edit `inventory/default/config/private/ssh_config` and add the IP address from ansible's output to the `#VPN instance` section.
 
 ### Configure a Kubernetes Cluster
 Pentagon uses Kops to create clusters in AWS. The default layout creates configurations for two Kubernetes clusters: `working` and `production`. See [Overview](overview.md) for a more comprehensive description of the directory layout.
