@@ -75,8 +75,7 @@ This creates a AWS instance running [OpenVPN](https://openvpn.net/). Read more a
 * In `env.yml`, set the list of user names that should have access to the VPN under `openvpn_clients`. You can add more later.
 * Run Ansible a few times
   * Run `ansible-playbook vpn.yml` until it fails on `VPN security groups`
-  * Run `ansible-playbook vpn.yml` until it fails `Gathering Facts` after you agree to trust the SSH key for the host.
-  * Run `ansible-playbook vpn.yml` one last time and it will succeed.
+  * Run `ansible-playbook vpn.yml` a second time and it will succeed 
   * Edit `inventory/config/private/ssh_config` and add the IP address from the SSH key prompt to the `#VPN instance` section.
 
 ### Configure a Kubernetes Cluster
